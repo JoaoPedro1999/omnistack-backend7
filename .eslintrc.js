@@ -4,7 +4,7 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: 'airbnb-base',
+  extends: ['prettier', 'airbnb-base'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -13,5 +13,6 @@ module.exports = {
     ecmaVersion: 2018,
   },
   rules: {
+    "eslint linebreak-style": [0, "error", "windows"],
   },
 };
